@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – 1500 Scorecard</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0f1117;
+      --surface:  #1a1d27;
+      --border:   #2a2d3a;
+      --accent:   #4f8ef7;
+      --green:    #22c55e;
+      --text:     #e2e8f0;
+      --muted:    #94a3b8;
+      --radius:   12px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 16px 80px;
+    }
+
+    /* ── Hero ── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 0 40px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(79,142,247,.15);
+      border: 1px solid rgba(79,142,247,.35);
+      border-radius: 999px;
+      padding: 6px 18px;
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 24px;
+      font-weight: 600;
+      letter-spacing: .04em;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #fff 30%, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 540px;
+      margin: 0 auto 32px;
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ── Philosophy cards ── */
+    .philosophy {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .phil-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .phil-card .icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .phil-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .phil-card p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ── Content ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      width: 28px;
+      height: 28px;
+      background: rgba(79,142,247,.18);
+      color: var(--accent);
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    p { margin-bottom: 14px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    li:last-child { margin-bottom: 0; }
+
+    .highlight {
+      background: rgba(34,197,94,.08);
+      border: 1px solid rgba(34,197,94,.25);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #86efac;
+    }
+    .highlight strong { color: var(--green); }
+
+    .warn {
+      background: rgba(251,191,36,.07);
+      border: 1px solid rgba(251,191,36,.25);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #fde68a;
+    }
+    .warn strong { color: #fbbf24; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 700; color: #fff; }
+
+    /* ── Footer ── */
+    footer {
+      max-width: 760px;
+      margin: 40px auto 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">&#128274; Your data, your control</div>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">
+    1500 Scorecard lets you track card game scores with friends.
+    We only collect what is strictly necessary to make accounts and online play work.
+  </p>
+  <p class="updated">Effective date: April 9, 2026 &nbsp;·&nbsp; App: 1500 Scorecard (Android)</p>
+</header>
+
+<!-- Philosophy cards -->
+<div class="philosophy">
+  <div class="phil-card">
+    <span class="icon">👤</span>
+    <h3>Optional Accounts</h3>
+    <p>Play as a guest with no account at all, or sign in with Google to save your stats across devices.</p>
+  </div>
+  <div class="phil-card">
+    <span class="icon">🎯</span>
+    <h3>Scores Only</h3>
+    <p>We store game scores and stats — nothing else. No location, no contacts, no health data.</p>
+  </div>
+  <div class="phil-card">
+    <span class="icon">🗑️</span>
+    <h3>Delete Anytime</h3>
+    <p>Delete your account and all associated data instantly from within the app.</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- 1 -->
+  <section>
+    <h2><span class="num">1</span> Who We Are</h2>
+    <p>
+      1500 Scorecard is an independent scorecard app for the card game 1500, developed by r25barrett.
+      The app is provided as-is for personal, non-commercial use.
+    </p>
+    <p>
+      If you have questions about this policy, contact us at:
+      <a href="mailto:mscvl24@gmail.com">mscvl24@gmail.com</a>
+    </p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2><span class="num">2</span> Account Types</h2>
+    <p>The app supports two ways to play:</p>
+    <ul>
+      <li>
+        <strong>Guest (anonymous):</strong> No email, no Google account required.
+        Firebase assigns you an anonymous ID. Your data is stored locally on your device
+        and is lost if you uninstall or sign out without first linking to Google.
+      </li>
+      <li>
+        <strong>Google Sign-In:</strong> Sign in with your Google account to back up your
+        stats to the cloud and access them across devices. Your email address is used by
+        Firebase Authentication to identify your account; it is not stored in our database
+        or used for marketing.
+      </li>
+    </ul>
+    <div class="highlight">
+      <strong>You are never required to create an account.</strong>
+      All core game features work with a guest session.
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2><span class="num">3</span> Data We Collect</h2>
+    <p>
+      When you use a Google account, the following data is stored in
+      <strong>Firebase Realtime Database</strong> (operated by Google) under your account:
+    </p>
+    <ul>
+      <li><strong>Display name</strong> — the name you choose in the app</li>
+      <li><strong>Game statistics</strong> — games played, games won, high scores, finishing positions</li>
+      <li><strong>Per-game records</strong> — date, player count, your final score, win/loss, rounds played</li>
+    </ul>
+    <p>
+      We do <strong>not</strong> collect your email address, phone number, location,
+      contacts, photos, device identifiers, or any other personal information beyond
+      what is listed above.
+    </p>
+    <div class="warn">
+      <strong>Multiplayer game records</strong> are shared among all players in that game.
+      Your display name may appear in records visible to other participants.
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2><span class="num">4</span> Local Storage</h2>
+    <p>
+      The app also stores data locally on your device using <strong>SharedPreferences</strong>:
+    </p>
+    <ul>
+      <li>Your unique app identifier (auto-generated, not linked to your identity)</li>
+      <li>Local game history and player records</li>
+      <li>App settings and colour preferences</li>
+    </ul>
+    <p>
+      This local data never leaves your device unless you are signed in with Google,
+      in which case completed games are synced to Firebase as described in §3.
+    </p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2><span class="num">5</span> Firebase &amp; Google Sign-In</h2>
+    <div class="warn">
+      <strong>Firebase is operated by Google.</strong>
+      When you sign in with Google or sync data to the cloud, Google's infrastructure
+      processes that data.
+    </div>
+    <p>
+      Firebase Authentication stores your Google account credentials (email address and
+      account ID) on Google's servers in order to authenticate you. This is governed by
+      Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+    </p>
+    <p>
+      We do not sell, share, or otherwise disclose any data to third parties beyond
+      the Firebase/Google infrastructure that powers the app.
+    </p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2><span class="num">6</span> Advertising (Google AdMob)</h2>
+    <p>
+      The app displays ads provided by <strong>Google AdMob</strong> to help cover
+      development costs. Google AdMob may collect and use:
+    </p>
+    <ul>
+      <li>An advertising identifier (Android Advertising ID / GAID)</li>
+      <li>Device model and OS version</li>
+      <li>IP address (to approximate general location for ad targeting)</li>
+      <li>App usage signals (ad impressions, clicks)</li>
+    </ul>
+    <p>
+      This data is collected and processed by Google, not by us.
+      Google's privacy policy applies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+    </p>
+    <p>
+      You can opt out of personalised advertising at any time in your Android device settings:
+      <strong>Settings → Privacy → Ads → Opt out of Ads Personalisation</strong>.
+    </p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2><span class="num">7</span> Deleting Your Data</h2>
+    <p>
+      You can permanently delete your account and all associated cloud data at any time,
+      directly from within the app:
+    </p>
+    <ul>
+      <li>Open the app and tap the <strong>Account</strong> icon</li>
+      <li>Scroll to the <strong>Danger Zone</strong> section</li>
+      <li>Tap <strong>Delete Account</strong> and confirm</li>
+    </ul>
+    <p>
+      This immediately and permanently deletes your profile, all game statistics, and
+      your Firebase Authentication account. Local device data is also cleared.
+      This action cannot be undone.
+    </p>
+    <p>
+      You may also submit a deletion request by email at
+      <a href="mailto:mscvl24@gmail.com">mscvl24@gmail.com</a>.
+      Manual requests are processed within 30 days. Full instructions are available at:
+      <a href="https://r25barrett.github.io/1500-scorecard-support/delete-account.html" target="_blank" rel="noopener">Delete Account page</a>.
+    </p>
+    <div class="highlight">
+      <strong>No retention period.</strong>
+      Account data is deleted immediately upon confirmation. Nothing is kept.
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2><span class="num">8</span> Children's Privacy</h2>
+    <p>
+      1500 Scorecard is not directed at children under the age of 13. We do not knowingly
+      collect personal information from children. If you believe a child has provided
+      personal information through this app, please contact us and we will take
+      appropriate steps to remove that data.
+    </p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2><span class="num">9</span> Changes to This Policy</h2>
+    <p>
+      If we make meaningful changes to this policy — for example, adding a new
+      third-party SDK that collects data — we will update the effective date at the
+      top of this page and note the change in the app's release notes.
+    </p>
+  </section>
+
+  <!-- 10 -->
+  <section>
+    <h2><span class="num">10</span> Contact</h2>
+    <p>Questions or concerns about this privacy policy?</p>
+    <p>Email: <a href="mailto:mscvl24@gmail.com">mscvl24@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  1500 Scorecard &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Effective April 9, 2026
+  <br /><br />
+  <a href="https://r25barrett.github.io/privacy_policies/">← Other app policies</a>
+</footer>
+
+</body>
+</html>
